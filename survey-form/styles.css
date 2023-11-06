@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: rgb(27 27 50 / 80%);
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#title {
+  font-size: 25px;
+  text-align: center;
+  margin:15px 0 0 0;
+}
+
+#description {
+  text-align: center;
+  margin: 0;
+}
+
+form {
+  width: 80%;
+  max-width: 550px;
+  height: fit-content;
+  margin: 1em auto;
+  padding: 20px;
+  background-color: #1b1b32;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+fieldset {
+  padding: none;
+  border: none;
+}
+
+#dropdown {
+  display: block;
+  width: 100%;
+}
+
+label {
+   display: block;
+   margin: .5rem 0;
+   font-size: 16px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+textarea, input, select {
+  width: 97%;
+  padding: .45em;
+  margin: .3em 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: unset;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  background-color: rgb(10, 59, 180);
+  color: white;
+  padding: .7em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
