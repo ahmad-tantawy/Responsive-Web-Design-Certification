@@ -51,7 +51,7 @@ nav a {
 }
 
 .btn {
-    width: 150px;
+    width: 180px;
     padding: 15px;
     border: none;
     border-radius: 30px;
@@ -161,6 +161,50 @@ nav a {
     width: 25vw;
     height: 450px;
     border-radius: 0 0 40px 0;
+}
+
+/* Start style for beautify-section */
+#beautify {
+    grid-column: 1 / -1;
+    margin-top: 5%;
+    background-color: #DFE9F4;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 580px));
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+    column-gap: calc(2%);
+}
+
+#beautify header{
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+#beautify p{
+    width: 80%
+}
+
+.circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: #19513B;
+    border-radius: 50%;
+    float: right;
+    margin-top: 22%;
+}
+
+.beautify-img {
+    position: relative;
+    background: url(./images/beautify-img.jpg) center;
+    background-size: cover;
+    width: 90%;
+    height: 650px;
+    border-radius: 30px 5px 30px 5px;
+    z-index: 1;
 }
 
 /* Start style for footer */
