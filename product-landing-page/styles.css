@@ -45,6 +45,7 @@ nav a {
     text-decoration: none;
     color: #333333;
 }
+
 /* Start style for all main-sections */
 .main-section {
     grid-column: 2 / 3;
@@ -207,7 +208,148 @@ nav a {
     z-index: 1;
 }
 
+
+/* Start style for browse-section */
+#browse {
+    grid-column: 2 / 3;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#browse header {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.browse-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: calc(3%);
+    top: 50px;
+}
+
+.browse-grid h3 {
+    color: #333333;
+}
+
+.browse-bg-01 {
+    background: url(./images/browse-bg-1.jpg) center;
+    background-size: cover;
+    width: 25vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.browse-bg-02 {
+    background: url(./images/browse-bg-2.jpg) center;
+    background-size: cover;
+    width: 25vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.browse-bg-03 {
+    background: url(./images/browse-bg-3.jpg) center;
+    background-size: cover;
+    width: 25vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+/* Start style for how-it-work-section */
+#how-it-work {
+    grid-column: 2 / 3;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#how-it-work header {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.how-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: calc(3%);
+    top: 50px;
+}
+
+.how-grid h3 {
+    color: #333333;
+}
+
+.how-bg-01 {
+    background: url(./images/how-bg-1.jpg) center;
+    background-size: cover;
+    width: 25vw;
+    height: 450px;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+.circle-num {
+    position: relative;
+    top: 26em;
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    padding: 20px;
+    border-radius: 50% ;
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 0 0 0 8px #ffffff; /* this for white circle */
+}
+
+.how-bg-02 {
+    background: url(./images/how-bg-2.jpg) center;
+    background-size: cover;
+    width: 25vw;
+    height: 450px;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+.how-bg-03 {
+    background: url(./images/how-bg-3.jpg) center;
+    background-size: cover;
+    width: 25vw;
+    height: 450px;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+/* Start style for join-mailing */
+#join-mailing {
+    grid-column: 1 / -1;
+    margin-top: 5%;
+    background-color: #F2F5FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+}
+
+#join-mailing header{
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+  
+
 /* Start style for footer */
 footer {
     grid-column: 1 / -1;
+    background-color: #03344F;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 600px));
+    justify-content: center;
+    padding: 8rem;
+    column-gap: calc(2%);
 }
