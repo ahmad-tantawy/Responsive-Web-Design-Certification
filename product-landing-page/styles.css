@@ -1,3 +1,4 @@
+/* Global Reset */
 html, body {
     padding: 0;
     margin: 0;
@@ -14,13 +15,14 @@ body {
     background-color: #FCFCFC;
 }
 
+/* Main Grid Layout */
 main {
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 90rem) minmax(2rem, 1fr);
     font-size: 1.6rem;
 }
 
-/* Start style for heading */
+/* Header Styles */
 #heading {
     grid-column: 1 / -1;
     display: grid;
@@ -46,9 +48,15 @@ nav a {
     color: #333333;
 }
 
-/* Start style for all main-sections */
+/* Main Sections Styles & Global */
 .main-section {
     grid-column: 2 / 3;
+}
+
+.main-section header, #header {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .btn {
@@ -56,12 +64,25 @@ nav a {
     padding: 15px;
     border: none;
     border-radius: 30px;
-    text-transform:uppercase;
-    color:#ffffff;
+    text-transform: uppercase;
+    color: #ffffff;
     background-color: #054C73;
 }
 
-/* Start style for hero-section */
+.gallery-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 15px;
+    top: 50px;
+}
+
+.gallery-grid h3 {
+    color: #333333;
+}
+
+/* Hero Section Styles */
 #hero-section {
     grid-column: 1 /-1;
 }
@@ -117,54 +138,40 @@ nav a {
     color: #333333;
 }
 
-/* Start style for inspiration-section */
+/* Inspiration Section Styles */
 #inspiration {
     grid-column: 2 / 3;
     margin-top: 5%;
     text-align: center;
 }
 
-#inspiration header{
-    color: #333333;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.inspiration-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: calc(3%);
-    top: 50px;
-}
-
 .inspiration-bg-01 {
     background: url(./images/inspiration-bg-1.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 40px 0 0 0;
+}
+
+#special-image-01{
+    border-radius: 30px 0 0 0;
 }
 
 .inspiration-bg-02 {
-    position: relative;
     background: url(./images/inspiration-bg-2.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
+}
+
+#special-image-02{
+    position: relative;
     top: -30px;
     margin-bottom: 50px;
 }
 
 .inspiration-bg-03 {
     background: url(./images/inspiration-bg-3.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 0 0 40px 0;
 }
 
-/* Start style for beautify-section */
+#special-image-03{
+    border-radius: 0 0 30px 0;
+}
+
+/* Beautify Section Styles */
 #beautify {
     grid-column: 1 / -1;
     margin-top: 5%;
@@ -175,13 +182,6 @@ nav a {
     justify-content: center;
     padding: 8rem;
     column-gap: calc(2%);
-}
-
-#beautify header{
-    color: #333333;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 20px 0;
 }
 
 #beautify p{
@@ -208,89 +208,51 @@ nav a {
     z-index: 1;
 }
 
-
-/* Start style for browse-section */
+/* Browse Section Styles */
 #browse {
     grid-column: 2 / 3;
     margin-top: 5%;
     text-align: center;
 }
 
-#browse header {
-    color: #333333;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.browse-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: calc(3%);
-    top: 50px;
-}
-
-.browse-grid h3 {
-    color: #333333;
-}
-
 .browse-bg-01 {
     background: url(./images/browse-bg-1.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 5px;
 }
 
 .browse-bg-02 {
     background: url(./images/browse-bg-2.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 5px;
 }
 
 .browse-bg-03 {
     background: url(./images/browse-bg-3.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 5px;
 }
 
-/* Start style for how-it-work-section */
+/* How It Works Section Styles */
 #how-it-work {
     grid-column: 2 / 3;
     margin-top: 5%;
     text-align: center;
 }
 
-#how-it-work header {
-    color: #333333;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.how-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: calc(3%);
-    top: 50px;
-}
-
-.how-grid h3 {
-    color: #333333;
-}
-
 .how-bg-01 {
     background: url(./images/how-bg-1.jpg) center;
+}
+
+.how-bg-02 {
+    background: url(./images/how-bg-2.jpg) center;
+}
+
+.how-bg-03 {
+    background: url(./images/how-bg-3.jpg) center;
+}
+
+/* Styles placed here for contextual correctness during execution, instead of global styles. */
+.gallery-item {
     background-size: cover;
     width: 25vw;
     height: 450px;
     border-radius: 5px;
-    margin-bottom: 3em;
-}
+}   /* end */
 
 .circle-num {
     position: relative;
@@ -305,25 +267,7 @@ nav a {
     box-shadow: 0 0 0 8px #ffffff; /* this for white circle */
 }
 
-.how-bg-02 {
-    background: url(./images/how-bg-2.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 5px;
-    margin-bottom: 3em;
-}
-
-.how-bg-03 {
-    background: url(./images/how-bg-3.jpg) center;
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 5px;
-    margin-bottom: 3em;
-}
-
-/* Start style for join-mailing */
+/* Join Mailing Section Styles */
 #join-mailing {
     grid-column: 1 / -1;
     margin-top: 5%;
@@ -335,20 +279,12 @@ nav a {
     padding: 8rem;
 }
 
-#join-mailing header{
-    color: #333333;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 20px 0;
-}
-  
-
-/* Start style for footer */
+/* Footer Styles */
 footer {
     grid-column: 1 / -1;
     background-color: #03344F;
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 600px));
+    grid-template-columns: repeat(2, minmax(auto, 700px));
     justify-content: center;
     padding: 8rem;
     column-gap: calc(2%);
