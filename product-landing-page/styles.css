@@ -1,5 +1,5 @@
 /* Global Reset */
-html, body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,45 +15,54 @@ body {
     background-color: #FCFCFC;
 }
 
-/* Main Grid Layout */
+/* Main */
 main {
-    display: grid;
-    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 90rem) minmax(2rem, 1fr);
     font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
 }
 
 /* Header Styles */
 #heading {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    position: fixed;
+    width: 100%;
+    min-height: 75px;
+    top: 0;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
+    z-index: 5;
 }
 
 .logo {
+    position: relative;
     font-size: 2rem;
     color: #054C73;
-    margin: 1.8rem 3rem;
+    margin: 1.8rem 3.5rem;
+    left: -33px;
 }
 
 header nav ul {
-    margin: 2.2rem 3rem;
-    list-style: none;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    right: -20px;
 }
 
 nav a {
     text-decoration: none;
+    margin: 0 1.5rem;
     color: #333333;
 }
 
 /* Main Sections Styles & Global */
-.main-section {
-    grid-column: 2 / 3;
-}
-
-.main-section header, #header {
+#section-header {
     color: #333333;
     font-size: 2rem;
     font-weight: 700;
@@ -83,7 +92,7 @@ nav a {
 }
 
 /* Hero Section Styles */
-#hero-section {
+#hero {
     grid-column: 1 /-1;
 }
 
