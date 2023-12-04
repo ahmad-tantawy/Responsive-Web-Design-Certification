@@ -18,14 +18,11 @@
         <header>
             <nav>
                 <ul>
-                    <li></li>
-                    <li></li>
                     <li><a href="#123" accesskey="h">Home</a></li>
                     <li><a href="#123" accesskey="s">Services</a></li>
                     <li><a href="#123" accesskey="d">Doctors</a></li>
                     <li><a href="#123" accesskey="p">Products</a></li>
                     <li><a href="#123" accesskey="g">Gallery</a></li>
-                    <li></li>
                 </ul>
             </nav>
         </header>
@@ -45,52 +42,56 @@
                 </div>
             </div>
             <div class="discober-footer">
-                <p>
+                <div>
                     <i></i>
                     <span>Free Delivery</span>
-                    Lorem ipsum dolor sit amet.
-                </p>
-                <p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
                     <i></i>
                     <span>Support 24/7</span>
-                    Lorem ipsum dolor sit amet.
-                </p>
-                <p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
                     <i></i>
                     <span>100% Authentic</span>
-                    Lorem ipsum dolor sit amet.
-                </p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
         </section>
 
-        <section class="main-section" id="inspiration">
-            <header>Inspiration Collection</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="gallery-grid">
-                    <div class="inspiration-bg-01 gallery-item" id="special-image-01"></div>
-                    <div class="inspiration-bg-02 gallery-item" id="special-image-02"></div>
-                    <div class="inspiration-bg-03 gallery-item" id="special-image-03"></div>
+        <section id="inspiration">
+            <div class="inspiration-header">
+                <header class="header">Inspiration Collection</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="gallery-flex">
+                    <div class="inspiration-bg-01 gallery-item"></div>
+                    <div class="inspiration-bg-02 gallery-item"></div>
+                    <div class="inspiration-bg-03 gallery-item"></div>
             </div>
         </section>
 
         <section id="beautify">
-            <div>
-                <header id="header">Beautify Your Space</header>
+            <div class="column-40">
+                <header class="header">Beautify Your Space</header>
                 <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                 </p>
                 <button class="btn beautify-btn">Learn more</button>
             </div>
-            <div>
+            <div class="column-50">
                 <div class="circle"></div>
                 <div class="beautify-img"></div>
             </div>
         </section>
 
-        <section class="main-section" id="browse">
-            <header>Browse The Range</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="gallery-grid">
+        <section id="browse">
+            <div class="common-header">
+                <header class="header">Browse The Range</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="gallery-flex">
                 <div>
                     <div class="browse-bg-01 gallery-item"></div>
                     <h3>Dining</h3>
@@ -106,39 +107,54 @@
             </div>
         </section>
 
-        <section class="main-section" id="how-it-work">
-            <header>How It Works</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="gallery-grid">
+        <section id="how-it-work">
+            <div class="common-header">
+                <header class="header">How It Works</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="gallery-flex">
                 <div>
                     <div class="how-bg-01 gallery-item">
-                        <p class="circle-num">1.</p>
+                        <div class="circle-num">
+                            <span>1.</span>
+                        </div>
                     </div>
-                    <h3>Purchase Securely</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="handle-width">
+                        <h3>Purchase Securely</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
 
                 <div>
                     <div class="how-bg-02 gallery-item">
-                        <p class="circle-num">2.</p>
+                        <div class="circle-num">
+                            <span>2.</span>
+                        </div>
                     </div>
-                    <h3>Ships From Warehouse</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="handle-width">
+                        <h3>Ships From Warehouse</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
 
                 <div>
                     <div class="how-bg-03 gallery-item">
-                        <p class="circle-num">3.</p>
+                        <div class="circle-num">
+                            <span>3.</span>
+                        </div>
                     </div>
-                    <h3>Style Your Room</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="handle-width">
+                        <h3>Style Your Room</h3>
+                        <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="main-section" id="join-mailing">
-            <header>Join Our Mailing List</header>
-            <p>Sign up to receive inspiration, product updates, and special offers from our team.</p>
+        <section id="join-mailing">
+            <header class="header">Join Our Mailing List</header>
+            <p>Sign up to receive inspiration, product updates,
+                <br>and special offers from our team.</p>
             <form action="./##" method="post">
                     <input type="email" name="email" placeholder="example@gmail.com" id="mail">
                     <input type="submit"/>
@@ -146,24 +162,24 @@
         </section>
 
         <footer>
-            <div>
+            <div class="column-30">
                 <div>
-                    <h3>Beauty Care</h3>
+                    <h3 class="footer-header">Beauty Care</h3>
                     <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 </div>
                 <div>
-                    <h3>Follow Us</h3>
+                    <h3 class="footer-header">Follow Us</h3>
                     <a href="#123" ><i></i></a>
                     <a href="#123" ><i></i></a>
                     <a href="#123" ><i></i></a>
                 </div>
             </div>
-            <div>
-                <h3>Instagram Shop</h3>
-                <img src="#123" alt="instagram-pho-01">
-                <img src="#123" alt="instagram-pho-02">
-                <img src="#123" alt="instagram-pho-02">
-                <img src="#123" alt="instagram-pho-02">
+            <div class="instagram">
+                <h3 class="footer-header">Instagram Shop</h3>
+                <img src="./images/Instagram-bg-1.jpg" alt="instagram-pho-01">
+                <img src="./images/Instagram-bg-2.jpg" alt="instagram-pho-02">
+                <img src="./images/Instagram-bg-3.jpg" alt="instagram-pho-03">
+                <img src="./images/Instagram-bg-4.jpg" alt="instagram-pho-03">
             </div>
         </footer>
     </main>

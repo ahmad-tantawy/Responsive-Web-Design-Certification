@@ -62,40 +62,29 @@ nav a {
 }
 
 /* Main Sections Styles & Global */
-#section-header {
+.section-header {
+margin: 5rem 0;
+}
+
+.header {
     color: #333333;
     font-size: 2rem;
     font-weight: 700;
+    margin: 1rem 0;
 }
 
 .btn {
     width: 180px;
     padding: 15px;
     border: none;
+    margin: 2rem 0;
     border-radius: 30px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #054C73;
 }
 
-.gallery-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    column-gap: 15px;
-    top: 50px;
-}
-
-.gallery-grid h3 {
-    color: #333333;
-}
-
 /* Hero Section Styles */
-#hero {
-    grid-column: 1 /-1;
-}
-
 .discover-bg {
     background: url(./images/discover-bg.png) center;
     background-size: cover;
@@ -133,40 +122,48 @@ nav a {
 }
 
 .discober-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #DFE9F4;
-    padding: 0 3rem;
-    column-gap: calc(15%);
+    padding: 3rem 5rem;
 }
 
 .discober-footer span {
     display: block;
-    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: .5rem 0;
     font-weight: bold;
     color: #333333;
 }
 
 /* Inspiration Section Styles */
 #inspiration {
-    grid-column: 2 / 3;
     margin-top: 5%;
     text-align: center;
+    padding: 0 5rem;
+}
+
+.inspiration-header {
+    margin: 8rem 0;
+}
+
+.gallery-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .inspiration-bg-01 {
     background: url(./images/inspiration-bg-1.jpg) center;
-}
-
-#special-image-01{
-    border-radius: 30px 0 0 0;
+    border-radius: 30px 0 0 0 !important;
 }
 
 .inspiration-bg-02 {
     background: url(./images/inspiration-bg-2.jpg) center;
-}
-
-#special-image-02{
     position: relative;
     top: -30px;
     margin-bottom: 50px;
@@ -174,33 +171,32 @@ nav a {
 
 .inspiration-bg-03 {
     background: url(./images/inspiration-bg-3.jpg) center;
-}
-
-#special-image-03{
-    border-radius: 0 0 30px 0;
+    border-radius: 0 0 30px 0 !important;
 }
 
 /* Beautify Section Styles */
 #beautify {
-    grid-column: 1 / -1;
     margin-top: 5%;
     background-color: #DFE9F4;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 580px));
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 8rem;
-    column-gap: calc(2%);
+    gap: 2rem;
+    padding: 8rem 5rem;
 }
 
-#beautify p{
-    width: 80%
+.column-50 {
+    width: 50%;
+}
+
+.column-40 {
+    width: 40%;
 }
 
 .circle {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     background-color: #19513B;
     border-radius: 50%;
     float: right;
@@ -212,16 +208,19 @@ nav a {
     background: url(./images/beautify-img.jpg) center;
     background-size: cover;
     width: 90%;
-    height: 650px;
+    height: 750px;
     border-radius: 30px 5px 30px 5px;
     z-index: 1;
 }
 
 /* Browse Section Styles */
 #browse {
-    grid-column: 2 / 3;
-    margin-top: 5%;
     text-align: center;
+    padding: 0 5rem;
+}
+
+.common-header {
+    margin: 4rem 0;
 }
 
 .browse-bg-01 {
@@ -236,11 +235,23 @@ nav a {
     background: url(./images/browse-bg-3.jpg) center;
 }
 
+#browse h3 {
+    margin: 2rem 0;
+}
+
 /* How It Works Section Styles */
 #how-it-work {
-    grid-column: 2 / 3;
-    margin-top: 5%;
     text-align: center;
+    padding: 0 5rem;
+}
+
+.handle-width {
+    width: 29vw;
+    padding: 3rem 0;
+}
+
+.handle-width h3 {
+    padding: .8rem 0;
 }
 
 .how-bg-01 {
@@ -255,46 +266,63 @@ nav a {
     background: url(./images/how-bg-3.jpg) center;
 }
 
-/* Styles placed here for contextual correctness during execution, instead of global styles. */
-.gallery-item {
-    background-size: cover;
-    width: 25vw;
-    height: 450px;
-    border-radius: 5px;
-}   /* end */
-
 .circle-num {
     position: relative;
-    top: 26em;
-    margin: 0 auto;
+    top: 30em;
     width: 15px;
     height: 15px;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 50% ;
     color: #ffffff;
     background-color: #000000;
     box-shadow: 0 0 0 8px #ffffff; /* this for white circle */
 }
+.circle-num span{
+    display: block;
+    position: relative;
+    top: -11px;
+    left: -5px;
+}
+
+.gallery-item {
+    background-size: cover;
+    width: 29vw;
+    height: 500px;
+    border-radius: 5px;
+}
 
 /* Join Mailing Section Styles */
 #join-mailing {
-    grid-column: 1 / -1;
     margin-top: 5%;
     background-color: #F2F5FF;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 8rem;
 }
 
 /* Footer Styles */
 footer {
-    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 5rem;
     background-color: #03344F;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 700px));
-    justify-content: center;
-    padding: 8rem;
-    column-gap: calc(2%);
+}
+
+.column-30{
+    width: 30%;
+}
+
+.instagram img {
+    width: 175px;
+    height: 185px;
+    margin: 0 .5rem;
+}
+
+.footer-header {
+    color: #ffffff;
+    margin: 2rem 0;
 }
